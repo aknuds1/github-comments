@@ -1,0 +1,16 @@
+$margin-sides: 90px;
+
+#container {
+  margin-top: 50px;
+  margin-left: $margin-sides;
+  margin-right: $margin-sides;
+}
+
+#last-change {
+  margin-top: 50px;
+}
+
+#commits {
+  list-style-type: none;
+  padding-left: 0;
+}

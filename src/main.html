@@ -1,0 +1,22 @@
+<head>
+  <title>GitHub Comments</title>
+</head>
+
+<body>
+<div id="container">
+  {{> commits }}
+</div>
+</body>
+
+<template name="commits">
+  <h1>Hello {{username}}!</h1>
+  <ul id="commits">
+    {{#each commits}}
+    <li><a href="{{url}}" target="_blank">{{sha}}</a></li>
+    {{/each}}
+  </ul>
+
+  <div id="last-change">
+    Last change: {{ lastChange }}
+  </div>
+</template>

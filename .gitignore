@@ -1,1 +1,8 @@
 .meteor/
+/.idea/workspace.xml
+/.idea/*.iws
+/.idea/tasks.xml
+/src/client/components/
+/src/packages/
+/node_modules/
+/src/server/configuration.coffee
