@@ -1,8 +1,10 @@
 {
   "packages": {
     "pince": {},
-    "lodash": {},
     "moment": {},
-    "scss": {}
+    "scss": {},
+    "lodash": {
+        "git": "https://github.com/aknuds1/meteor-lodash.git"
+    }
   }
 }

@@ -7,7 +7,10 @@ Meteor.startup(->
 )
 
 Template.commits.username = -> Session.get("username")
-Template.commits.commits = -> Commits.find().fetch()
+Template.commits.commits = ->
+  commits = Commits.find().fetch()
+  _(commits).sortBy((commit) -> commit.sha)
+    .sortBy((commit) -> commit.lastChange).reverse().value()
 Template.commits.lastChange = ->
   lastChanges = Commits.find({}, {transform: (doc) -> doc.lastChange}).fetch()
   if _(lastChanges).isEmpty()
