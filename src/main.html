@@ -12,7 +12,7 @@
   <h1>Hello {{username}}!</h1>
   <ul id="commits">
     {{#each commits}}
-    <li><a href="{{url}}" target="_blank">{{sha}}</a></li>
+    <li><a href="{{url}}" target="_blank">{{ date }} - {{message}}</a> ({{ comments.length }})</li>
     {{/each}}
   </ul>
 
