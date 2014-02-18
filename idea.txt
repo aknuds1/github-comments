@@ -1,1 +1,0 @@
-Keep track of comments pertaining to your Github commits

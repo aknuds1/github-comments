@@ -13,6 +13,14 @@
   <ul id="commits">
     {{#each commits}}
     <li><a href="{{url}}" target="_blank">{{ date }} - {{message}}</a> ({{ comments.length }})</li>
+    <ul>
+      {{#each comments}}
+      <li>
+        <a href="{{html_url}}" target="_blank">{{ path }}:{{ line }}</a><br>
+        <p>{{body}}</p>
+      </li>
+      {{/each}}
+    </ul>
     {{/each}}
   </ul>
 
