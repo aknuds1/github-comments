@@ -18,7 +18,6 @@ Template.commits.commits = ->
     url: doc.url
     comments: doc.comments
   ).fetch()
-  debugger
   lodash(commits).sortBy((commit) -> commit.sha)
     .sortBy((commit) -> commit.date)
     .sortBy((commit) -> commit.lastChange).reverse().value()
